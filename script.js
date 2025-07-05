@@ -30,7 +30,7 @@ async function getMovieinfo() {
     }
 
     try {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=${apikey}&s=${input.trim()}`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${apikey}&s=${input.trim()}`);
         const data = await response.json();
 
         console.log(data.Search);
